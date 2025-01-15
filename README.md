@@ -33,6 +33,7 @@ This digital CV is designed to provide a concise and visually appealing summary 
 ## Tech Stack
 
 ### Frontend Technologies
+
 - HTML
 - CSS
 - Bootstrap
@@ -43,6 +44,7 @@ This digital CV is designed to provide a concise and visually appealing summary 
 - React Native
 
 ### Backend Technologies
+
 - Python
 - Flask
 - FastAPI
@@ -51,6 +53,7 @@ This digital CV is designed to provide a concise and visually appealing summary 
 - API Development
 
 ### Deployment & Hosting
+
 - Git
 - Supabase
 - Render
@@ -75,6 +78,7 @@ This digital CV is designed to provide a concise and visually appealing summary 
 ## Projects
 
 ### [Trail Twin](https://apps.apple.com/us/app/trail-twin/id6560107425)
+
 - **Description**: A mobile app for mountain bikers to find friends and rides. Users can search by name or location for connections and events.
 - **Tech Used**: React Native (Frontend), Supabase (Backend)
 - **Image**:
@@ -83,6 +87,7 @@ This digital CV is designed to provide a concise and visually appealing summary 
 ---
 
 ### [McQueen](https://ai.rocke.so/)
+
 - **Description**: A voice AI customer service assistant for electricians, trained on common tasks. Includes a landing page for customer interactions.
 - **Tech Used**: Next.js, Vapi API
 - **Image**:
@@ -95,6 +100,7 @@ This digital CV is designed to provide a concise and visually appealing summary 
 - **Email**: [tjrocke365@gmail.com](mailto:tjrocke365@gmail.com)
 - **Phone**: +1 443-373-6564
 - **LinkedIn**: [Charles Rocke](https://www.linkedin.com/in/charles-rocke-716bb71ab/)
+- **Github**: [Charles Rocke](https://github.com/Charles-Rocke)
 
 ---
 
