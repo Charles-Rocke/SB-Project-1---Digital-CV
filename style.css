@@ -3,12 +3,20 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-color: black;
   color: #fffcf0;
+  border: solid 1px;
+  padding: 50px;
 }
 
 /* Center Heading */
 h1 {
   text-align: center;
   text-shadow: 2px 2px 4px #ff8c00;
+}
+
+/* Space for other headings */
+h2,
+h3 {
+  padding-bottom: 20px;
 }
 
 /* Image of me */
@@ -26,7 +34,38 @@ a {
 }
 
 /* Distinguish important sub sections */
-h2,
-h3 {
-  text-decoration: underline;
+
+.divider {
+  border-bottom: solid 1px #fffcf0;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
+
+/* Styling for copyright symbol */
+.copyright-symbol {
+  color: #ff8c00;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: solid 1px #ff8c00;
+  color: #ff8c00;
+  outline: #ff8c00;
+}
+label {
+  color: #ff8c00;
+}
+
+button {
+  margin-top: 10px;
+  background-color: transparent;
+  color: #ff8c00;
+  border: solid 1px #ff8c00;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Form layout */

@@ -16,7 +16,7 @@
       <!--CV Sub details-->
       <section>
         <h2>Contact Information</h2>
-        <div>
+        <div class="divider">
           <ul>
             <li>Email: tjrocke365@gmail.com</li>
             <li>Phone: +1 443-373-6564</li>
@@ -35,7 +35,7 @@
 
         <!--Summary Section-->
         <h2>Summary</h2>
-        <div>
+        <div class="divider">
           <p>
             I'm an aspiring Software Engineer and Full Stack developer. I'm very
             passionate about building things people want and taking corrective
@@ -46,7 +46,7 @@
 
         <!--Education Section-->
         <h2>Education</h2>
-        <div>
+        <div class="divider">
           <ul>
             <li>Springboard - Software Engineering Track, 2025</li>
             <li>Udemy - React Native Practical Guide, 2024</li>
@@ -68,45 +68,47 @@
         </div>
         <!--Tech I know table-->
         <h2>Tech I know</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Frontend</th>
-              <th>Backend</th>
-              <th>Deployment</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>HTML</td>
-              <td>Python</td>
-              <td>Vercel</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>Flask</td>
-              <td>Netlify</td>
-            </tr>
-            <tr>
-              <td>Bootstrap</td>
-              <td>FastAPI</td>
-              <td>Supabase</td>
-            </tr>
-            <tr>
-              <td>Tailwind CSS</td>
-              <td>Docker</td>
-              <td>Render</td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>PostgreSQL</td>
-              <td>Git</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="divider">
+          <table>
+            <thead>
+              <tr>
+                <th>Frontend</th>
+                <th>Backend</th>
+                <th>Deployment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Python</td>
+                <td>Vercel</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Flask</td>
+                <td>Netlify</td>
+              </tr>
+              <tr>
+                <td>Bootstrap</td>
+                <td>FastAPI</td>
+                <td>Supabase</td>
+              </tr>
+              <tr>
+                <td>Tailwind CSS</td>
+                <td>Docker</td>
+                <td>Render</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>PostgreSQL</td>
+                <td>Git</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <!--Things I'm proud of section-->
-      <section>
+      <section class="divider">
         <h2>Things I'm Proud of</h2>
         <ol>
           <li>
@@ -120,7 +122,7 @@
         </ol>
       </section>
       <!--Project Section-->
-      <section>
+      <section class="divider">
         <h2>Projects</h2>
         <p>These projects sole purpose was to learn how to get customers</p>
         <div>
@@ -161,7 +163,7 @@
         </div>
       </section>
       <!-- Contact Form -->
-      <section>
+      <section class="divider">
         <h3>Contact me anytime</h3>
         <form action="#">
           <!-- Name Input -->
@@ -194,7 +196,7 @@
           </select>
           <!-- Mode Radio Input-->
           <br />
-          <label>Preferred Mode :</label>
+          <label class="mode-label">Preferred Mode :</label>
           <br />
           <input
             type="radio"
@@ -202,15 +204,18 @@
             name="mode"
             value="dark mode"
             required
-          />Dark Mode<br />
-
+          />
+          <label for="darkMode">Dark Mode</label>
+          <br />
           <input
             type="radio"
             id="lightMode"
             name="mode"
-            value="Light Mode"
+            value="light mode"
             required
-          />Light Mode <br />
+          />
+          <label for="lightMode">Light Mode</label>
+          <br />
 
           <!-- Message Input-->
           <label for="message">Message:</label>
@@ -220,11 +225,13 @@
         </form>
       </section>
     </main>
-    <!--Footer of CVC-->
-    <hr />
+    <!--Footer of CV-->
     <footer>
       <p>Stay tuned for more!</p>
-      <p>©️ 2025 Thomas Rocke Digital CV</p>
+      <p>
+        <span class="copyright-symbol">&copy;</span> 2025 Thomas Rocke Digital
+        CV
+      </p>
     </footer>
   </body>
 </html>
