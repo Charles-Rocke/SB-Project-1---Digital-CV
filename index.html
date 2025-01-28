@@ -3,35 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
-    <title>Charles' Digital CV</title>
+    <title>Thomas' Digital CV</title>
   </head>
   <body>
     <!-- Header section of CV -->
     <header>
-      <h1>Thomas Rocke Digital CV</h1>
       <img class="tjimg" src="me.jpg" alt="Picture of me" />
+      <h1>Thomas Rocke</h1>
+      <ul class="contact">
+        <li>Email: tjrocke365@gmail.com</li>
+        <li>Phone: +1 443-373-6564</li>
+        <li>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/charles-rocke-716bb71ab/"
+            >Click here</a
+          >
+        </li>
+        <li>
+          Github:
+          <a href="https://github.com/Charles-Rocke/">Click here</a>
+        </li>
+      </ul>
     </header>
     <!-- Main Section of CV-->
     <main>
       <!--CV Sub details-->
       <section>
-        <h2>Contact Information</h2>
-        <div class="divider">
-          <ul>
-            <li>Email: tjrocke365@gmail.com</li>
-            <li>Phone: +1 443-373-6564</li>
-            <li>
-              LinkedIn:
-              <a href="https://www.linkedin.com/in/charles-rocke-716bb71ab/"
-                >Click here</a
-              >
-            </li>
-            <li>
-              Github:
-              <a href="https://github.com/Charles-Rocke/">Click here</a>
-            </li>
-          </ul>
-        </div>
+        <div class="divider"></div>
 
         <!--Summary Section-->
         <h2>Summary</h2>
@@ -79,7 +77,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>HTML</td>
+                <td>HTML & React</td>
                 <td>Python</td>
                 <td>Vercel</td>
               </tr>
@@ -124,42 +122,51 @@
       <!--Project Section-->
       <section class="divider">
         <h2>Projects</h2>
-        <p>These projects sole purpose was to learn how to get customers</p>
-        <div>
-          <!--Project: Trail Twin-->
-          <h3>
-            <a href="https://apps.apple.com/us/app/trail-twin/id6560107425"
-              >Trail Twin</a
-            >
-          </h3>
+
+        <!--Project: Trail Twin-->
+
+        <div class="project">
           <img
+            class="project-img"
             src="trailtwin.png"
             alt="Picture of Trail Twin Landing page (you can find it at trailtwin.co)"
             height="200"
             width="300"
           />
-          <p>
-            A mobile app for finding MTB friends and rides. Allows users to find
-            friends and rides through name and location based search. Built
-            using React Native for the frontend and Supabase in the backend.
-          </p>
+          <div class="project-details">
+            <h3 class="project-title">
+              <a href="https://apps.apple.com/us/app/trail-twin/id6560107425"
+                >Trail Twin</a
+              >
+            </h3>
+            <p class="project-par">
+              A mobile app for finding MTB friends and rides. Allows users to
+              find friends and rides through name and location based search.
+              Built using React Native for the frontend and Supabase in the
+              backend.
+            </p>
+          </div>
         </div>
         <!--Project: McQueen-->
-        <div>
-          <h3>
-            <a href="https://ai.rocke.so/">McQueen</a>
-          </h3>
+        <div class="project">
           <img
+            class="project-img"
             src="mcqueen.png"
             alt="Picture of Trail Twin Landing page (you can find it at ai.rocke.so)"
             height="200"
             width="300"
           />
-          <p>
-            A Voice Ai customer service assistant for electricians. A landing
-            page that allows customers to interact with a real voice ai trained
-            on basic electrician work. Built with Next.Js and secret sauce 🫙
-          </p>
+          <div class="project-details">
+            <h3 class="project-title">
+              <a href="https://ai.rocke.so/">McQueen</a>
+            </h3>
+            <p class="project-par">
+              A Voice Ai customer service assistant for electricians. A landing
+              page that allows customers to interact with a real voice ai
+              trained on basic electrician work. Built with Next.Js and secret
+              sauce 🫙
+            </p>
+          </div>
         </div>
       </section>
       <!-- Contact Form -->
@@ -167,59 +174,66 @@
         <h3>Contact me anytime</h3>
         <form action="#">
           <!-- Name Input -->
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Full name"
-            required
-          />
+          <div class="form-input">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full name"
+              required
+            />
+          </div>
           <br />
           <!-- Email Input -->
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
+          <div class="form-input">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
           <br />
           <!-- Reason Select Input -->
-          <label for="reason">Reason for contact:</label>
-          <select id="reason" name="reason" required>
-            <option value="">Reason</option>
-            <option value="Co-Founder">Co-Founder</option>
-            <option value="Friendship">Job</option>
-            <option value="Friendship">Friendship</option>
-          </select>
+          <div class="form-input">
+            <label for="reason">Reason for contact:</label>
+            <select id="reason" name="reason" required>
+              <option value="">Reason</option>
+              <option value="Co-Founder">Co-Founder</option>
+              <option value="Friendship">Job</option>
+              <option value="Friendship">Friendship</option>
+            </select>
+          </div>
           <!-- Mode Radio Input-->
           <br />
-          <label class="mode-label">Preferred Mode :</label>
-          <br />
-          <input
-            type="radio"
-            id="darkMode"
-            name="mode"
-            value="dark mode"
-            required
-          />
-          <label for="darkMode">Dark Mode</label>
-          <br />
-          <input
-            type="radio"
-            id="lightMode"
-            name="mode"
-            value="light mode"
-            required
-          />
-          <label for="lightMode">Light Mode</label>
+          <div class="form-input">
+            <label>Preferred Mode:</label>
+            <br />
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="mode" value="dark mode" required />
+                Dark Mode</label
+              >
+              <label
+                ><input type="radio" name="mode" value="light mode" required />
+                Light Mode</label
+              >
+            </div>
+          </div>
           <br />
 
           <!-- Message Input-->
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
+          <div class="form-input">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Leave a message"
+            ></textarea>
+          </div>
           <br />
           <button type="submit">Submit</button>
         </form>

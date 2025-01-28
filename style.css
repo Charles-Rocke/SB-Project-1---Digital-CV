@@ -7,10 +7,26 @@ body {
   padding: 50px;
 }
 
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Center Heading */
 h1 {
+  flex: 1;
   text-align: center;
   text-shadow: 2px 2px 4px #ff8c00;
+}
+
+/* contact section */
+.contact {
+  position: absolute;
+  list-style: none;
+  bottom: 0px;
+  right: 0px;
 }
 
 /* Space for other headings */
@@ -21,6 +37,7 @@ h3 {
 
 /* Image of me */
 .tjimg {
+  justify-content: flex-start;
   border-radius: 100%;
   height: 15rem;
   width: 15rem;
@@ -68,4 +85,166 @@ button {
   cursor: pointer;
 }
 
-/* Form layout */
+/* Tech Table section */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+}
+th {
+  text-decoration: underline;
+}
+
+/* Project section layout */
+.project {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.project-details {
+  padding: 30px;
+}
+.project-img {
+  border-radius: 10px;
+}
+
+/* Form Layout */
+form {
+  width: 50%;
+  margin: 50px auto;
+
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px; /* Space between form elements */
+}
+
+.form-input {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.form-input label {
+  text-align: left;
+  margin-right: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  background: black;
+  color: #ff8c00;
+  border: 1px dashed #ff8c00;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #ff8c00;
+}
+
+textarea {
+  height: 80px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.checkbox-group,
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: black;
+  color: #ff8c00;
+  border: 2px solid #ff8c00;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-self: start; /* Aligns the button to the left */
+}
+
+button:hover {
+  background: #ff8c00;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  section h2,
+  section h3 {
+    font-size: 1.5em;
+  }
+
+  table th,
+  table td {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header img {
+    max-width: 100px;
+  }
+
+  section h2,
+  section h3 {
+    font-size: 1.2em;
+  }
+
+  table th,
+  table td {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  form input,
+  form select,
+  form textarea,
+  form button {
+    font-size: 0.9em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
