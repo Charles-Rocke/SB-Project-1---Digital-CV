@@ -22,11 +22,21 @@ h1 {
 }
 
 /* contact section */
+.contact-container {
+  display: flex;
+  justify-content: flex-end; /* Pushes the whole contact list to the right */
+  width: 100%; /* Ensures it stretches across the page */
+}
+
 .contact {
-  position: absolute;
-  list-style: none;
-  bottom: 0px;
-  right: 0px;
+  list-style: none; /* Removes default bullets */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Ensures text is left-aligned inside the list */
+}
+
+.contact li {
+  text-align: left; /* Keeps list item text left-aligned */
 }
 
 /* Space for other headings */
@@ -190,61 +200,91 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
-  }
-
-  section h2,
-  section h3 {
-    font-size: 1.5em;
-  }
-
-  table th,
-  table td {
-    font-size: 0.9em;
-  }
-}
-
 @media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    padding: 10px;
+  header img.tjimg {
+    width: 100px;
+    height: 100px;
   }
 
   header h1 {
-    font-size: 1.8em;
+    font-size: 1.5rem;
   }
 
-  header img {
-    max-width: 100px;
+  .project {
+    flex-direction: column;
   }
 
-  section h2,
-  section h3 {
-    font-size: 1.2em;
-  }
-
-  table th,
-  table td {
-    font-size: 0.8em;
-    padding: 6px;
+  .project img.project-img {
+    margin-bottom: 10px;
+    width: 100%;
   }
 
   table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+    font-size: 0.9rem;
   }
 
-  form input,
-  form select,
-  form textarea,
-  form button {
-    font-size: 0.9em;
+  th,
+  td {
+    padding: 8px;
   }
 
-  footer {
-    font-size: 0.8em;
+  form {
+    width: 90%; /* Reduce form width on small screens */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  header img.tjimg {
+    width: 120px;
+    height: 120px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    width: 80%; /* Form width for tablets */
+  }
+
+  .project img.project-img {
+    width: 70%; /* Adjust project image size */
+  }
+}
+
+/* For wider screens (768px and above) */
+@media (min-width: 769px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .project img.project-img {
+    width: 300px;
+    height: auto;
+  }
+
+  form {
+    max-width: 600px;
+  }
+}
+
+/* Animations */
+header h1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+button {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
