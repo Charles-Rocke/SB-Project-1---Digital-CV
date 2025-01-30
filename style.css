@@ -240,26 +240,97 @@ button:hover {
   }
 
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
 
   form {
     width: 80%; /* Form width for tablets */
   }
 
+  .project {
+    flex-direction: column;
+  }
+
   .project img.project-img {
-    width: 70%; /* Adjust project image size */
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
 
 /* For wider screens (768px and above) */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 980px) {
   header h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+
+  li,
+  td,
+  th {
+    font-size: 40px;
+  }
+
+  img.tjimg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .project {
+    flex-direction: column;
   }
 
   .project img.project-img {
+    width: 880px;
+    height: auto;
+  }
+
+  form,
+  label,
+  input,
+  select,
+  textarea,
+  .form-input {
+    width: 100%;
+    font-size: 40px;
+  }
+  button {
+    width: 35%;
+    font-size: 40px;
+  }
+}
+
+/* For wider screens (768px and above) */
+@media (min-width: 981px) {
+  header h1 {
+    font-size: 4rem;
+  }
+
+  img.tjimg {
     width: 300px;
+    height: 300px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project img.project-img {
+    width: 880px;
     height: auto;
   }
 
